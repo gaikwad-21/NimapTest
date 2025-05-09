@@ -39,7 +39,7 @@ public class CategoryController {
 	// Api for getting all the categories
 	@GetMapping
 	public Page<Category> getAllCategories(@RequestParam(defaultValue = "0") int page,
-			@RequestParam(defaultValue = "5") int size) {
+			@RequestParam(defaultValue = "3") int size) {
 		return categoryService.getAllCategories(PageRequest.of(page, size));
 	}
 

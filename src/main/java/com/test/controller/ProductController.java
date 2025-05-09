@@ -36,7 +36,7 @@ public class ProductController {
 	// Api for getting All Products with Pagination
 	@GetMapping
 	public Page<Product> getAllProducts(@RequestParam(defaultValue = "0") int page,
-			@RequestParam(defaultValue = "2") int size) {
+			@RequestParam(defaultValue = "3") int size) {
 		return productService.getPaginatedProducts(page, size);
 	}
 
